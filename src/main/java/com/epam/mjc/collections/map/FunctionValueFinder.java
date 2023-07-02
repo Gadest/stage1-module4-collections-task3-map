@@ -9,7 +9,7 @@ public class FunctionValueFinder {
         boolean b=false;
         Map<Integer, Integer> functionMap = calculateFunctionMap(sourceList);
         for (Integer i:
-             functionMap.values()) {
+                functionMap.values()) {
             if (i==requiredValue){
                 return true;
             }
@@ -20,7 +20,7 @@ public class FunctionValueFinder {
     private Map<Integer, Integer> calculateFunctionMap(List<Integer> sourceList) {
         Map<Integer, Integer> map = new HashMap<>();
         for (Integer i:
-             sourceList) {
+                sourceList) {
             map.put(i,5*i+2);
         }
         return map;
